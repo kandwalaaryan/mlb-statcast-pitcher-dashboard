@@ -4,13 +4,17 @@ An end-to-end baseball analytics project that uses **MLB Statcast data, Databric
 
 The project ingests pitch-level Statcast data, transforms it through a Bronze → Silver → Gold pipeline, enriches player profiles using the MLB Stats API, and exposes reporting views used by Tableau.
 
+**25K+ pitches · 399 pitchers · 790 players · Bronze/Silver/Gold pipeline · Interactive Tableau dashboard**
+
+Built on **25K+ pitch-level Statcast records**, covering **790 MLB players** and **399 pitchers**, with the dashboard dynamically updating all KPIs and visualizations for the selected pitcher.
+
 ![Dashboard preview](dashboard.png)
 
 > **Analysis window:** April 1–7, 2025
 
 ## Dashboard
 
-The Tableau dashboard lets users select an MLB pitcher and explore:
+The dashboard includes a **pitcher selector that dynamically updates all visualizations and KPIs for the selected pitcher**. Users can explore:
 
 - **Pitcher profile** — player information and headshot
 - **KPI summary** — total pitches, primary pitch, average velocity, and number of pitch types
@@ -186,17 +190,11 @@ All 399 dashboard pitchers have populated profile fields used by the Tableau pla
 ## Repository Structure
 
 ```text
-mlb-pitcher-analytics/
-│
+mlb-statcast-pitcher-dashboard/
 ├── README.md
-├── notebooks/
-│   └── 01_ingest_statcast_clean.ipynb
-│
-├── tableau/
-│   └── MLB_Pitcher_Profile.twbx
-│
-└── images/
-    └── dashboard.png
+├── 01_ingest_statcast_clean.ipynb
+├── MLB_Pitcher_Profile.twbx
+└── dashboard.png
 ```
 
 ## Running the Pipeline
