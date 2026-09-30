@@ -4,7 +4,7 @@ An end-to-end baseball analytics project that uses **MLB Statcast data, Databric
 
 The project ingests pitch-level Statcast data, transforms it through a Bronze → Silver → Gold pipeline, enriches player profiles using the MLB Stats API, and exposes reporting views used by Tableau.
 
-![Dashboard preview](images/dashboard.png)
+![Dashboard preview](dashboard.png)
 
 > **Analysis window:** April 1–7, 2025
 
